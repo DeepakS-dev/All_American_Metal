@@ -1,0 +1,84 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2b3b3b;
+  padding: 15px 40px;
+}
+
+/* Logo Styling */
+.logo {
+  font-family: "Nova Square";
+  font-weight: 400px;
+  font-size: 34px;
+  line-height: 41.04px;
+  letter-spacing: 1%;
+  color: #a8cf45;
+}
+
+/* Navigation and Button Wrapper */
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20.72px;
+}
+
+.nav-links li {
+  display: inline;
+  font-family: "Montserrat";
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #a8cf45;
+}
+
+/* Sell Your Metal Button */
+.sell-metal {
+  background-color: #a8cf45;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-weight: bold;
+  width: 182px;
+  height: 50px;
+  left: 1150px;
+}
+
+.sell-metal a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.sell-metal span {
+  margin-left: 10px;
+  font-size: 18px;
+}

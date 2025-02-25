@@ -1,0 +1,422 @@
+/* Header Navigation */
+header {
+  background-color: #18302b;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+nav .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #a3db33;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.sell-btn {
+  background-color: #a3db33;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background: url("../images/background_image.jpeg") no-repeat center
+    center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin-top: 60px;
+}
+
+.hero h1 {
+  width: 967px;
+  height: 124px;
+  top: 220px;
+  left: 237px;
+  font-family: Montserrat;
+  font-weight: 800px;
+  font-size: 51px;
+  line-height: 62.17px;
+  letter-spacing: 1%;
+  text-align: center;
+}
+.hero-buttons button {
+  background: #a3db33;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 178px;
+  height: 45px;
+  top: 374px;
+  left: 531px;
+  border-radius: 4px;
+}
+.hero-buttons-text {
+  font-family: Montserrat;
+  font-weight: 500px;
+  font-size: 18px;
+  line-height: 21.94px;
+  letter-spacing: 1%;
+  text-align: center;
+}
+
+.info {
+  background-color: #21413c;
+  padding: 50px;
+  color: #ffffff;
+  text-align: left;
+  max-width: 100%;
+  margin: 0 auto;
+  /* border-radius: 10px; */
+}
+
+.info h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.info p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #d1d1d1;
+  margin-bottom: 20px;
+}
+
+.info h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.info ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 10px;
+}
+
+.info ul li {
+  font-size: 16px;
+  position: relative;
+  padding-left: 20px;
+}
+
+/* Adding Bullet Style */
+.info ul li::before {
+  content: "•";
+
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+/* Highlights Section */
+/* .highlights {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  background: #3b5d54;
+}
+.highlight {
+  background: rgba(163, 219, 51, 0.8);
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+} */
+.highlights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+  margin-top: 20px;
+  position: sticky;
+}
+
+.highlight {
+  width: 480px;
+  height: 572px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Background images for each card */
+.about {
+  position: relative;
+  background: url("../images/card1home.jpeg") no-repeat center/cover;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #aeda24de; /* Overlay color */
+  opacity: 0.8; /* Adjust transparency */
+}
+
+.serve {
+  position: relative;
+  background: url("../images/card2home.jpeg") no-repeat center/cover;
+}
+.serve::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #041818d9; /* Overlay color */
+  opacity: 0.8; /* Adjust transparency */
+}
+
+.commitment {
+  position: relative;
+  background: url("../images/card3home.jpeg") no-repeat center/cover;
+}
+.commitment::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #aeda24de; /* Overlay color */
+  opacity: 0.8; /* Adjust transparency */
+}
+
+/* Overlay for visibility */
+.highlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Text styles */
+.highlight h3 {
+  font-size: 24px;
+  font-weight: 800;
+  position: relative;
+  z-index: 2;
+}
+
+.highlight p {
+  position: relative;
+  z-index: 2;
+}
+
+/* Button styles */
+.highlight button {
+  background: none;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.highlight button::after {
+  content: "→";
+  font-size: 18px;
+}
+
+.maximize-profits {
+  background-color: #204a48;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 5px;
+  
+}
+
+.maximize-profits h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.sellYourButton{
+  width: 253px;
+height: 69px;
+top: 2045px;
+left: 580px;
+border-radius: 2px;
+background-color: #AEDA24;
+
+}
+
+.maximize-profits p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  text-align: center; /* Ensures text is centered */
+}
+
+.sell-btn {
+  background-color: #aeda24;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sell-btn:hover {
+  background-color: #8dba1a;
+}
+
+.sell-btn::after {
+  content: " →";
+  font-weight: bold;
+}
+.footer-line-of-home {
+  width: 803px;
+  height: 286px;
+  top: 1828px;
+  left: 319px;
+  max-width: 800px;
+  padding: 20px;
+  margin-left: 350px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.para-of-footer-line {
+  font-family: "Jost";
+  font-weight: 400px;
+  font-size: 20px;
+  line-height: 28.9px;
+  letter-spacing: 1%;
+  text-align: center;
+}
+.heading-of-footer-line {
+  font-family: "Montserrat";
+  font-weight: 700px;
+  font-size: 27px;
+  line-height: 32.91px;
+  letter-spacing: 1%;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #1d3a3a;
+  padding: 20px;
+  text-align: center;
+}
+.social-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer {
+  background-color: #163d3d; /* Dark green background */
+  padding: 20px 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-nav span {
+  color: #ffffff;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  color: #ffffff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #1da1f2; /* Change color on hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

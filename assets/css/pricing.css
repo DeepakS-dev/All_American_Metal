@@ -1,0 +1,272 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1c3d3d;
+  color: white;
+}
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b3b3b;
+    padding: 15px 40px;
+  }
+  
+  /* Logo Styling */
+  .logo {
+    font-family: "Nova Square";
+    font-weight: 400px;
+    font-size: 34px;
+    line-height: 41.04px;
+    letter-spacing: 1%;
+    color: #a8cf45;
+  }
+  
+  /* Navigation and Button Wrapper */
+  .nav-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20.72px;
+  }
+  
+  .nav-links li {
+    display: inline;
+    font-family: "Montserrat";
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #a8cf45;
+  }
+  
+  /* Sell Your Metal Button */
+  .sell-metal {
+    background-color: #a8cf45;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-weight: bold;
+    width: 182px;
+    height: 50px;
+    left: 1150px;
+  }
+  
+  .sell-metal a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sell-metal span {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+.hero {
+  background: url("../images/background_image.jpeg") no-repeat center
+    center/cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h2 {
+  font-size: 1em;
+  font-weight: bold;
+}
+.hero-content {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 62.17px;
+  letter-spacing: 1%;
+  text-align: center;
+}
+
+.pricing-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 50px;
+}
+
+.calculator,
+.callback-form {
+  background: #284b4b;
+  padding: 20px;
+  border-radius: 5px;
+}
+.calculator {
+  border: 1px solid #c6dede;
+  border-radius: 8px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  width: 585px;
+}
+
+.callback-form {
+    border: 1px solid #c6dede;
+    border-radius: 8px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    width: 585px;
+  }
+
+
+select.select-container,
+input.input-container {
+  background: rgba(217, 217, 217, 0.1);
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid #c6dede !important;
+  border-radius: 3px;
+  padding: 15px !important;
+  width: 80% !important;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+input.input-container {
+  width: 440px !important;
+}
+ h3.h3-text {
+    font-family: "Montserrat";
+font-weight: 700px;
+font-size: 27px;
+line-height: 32.91px;
+letter-spacing: 1%;
+margin-bottom: revert;
+
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding-left: 65px;
+  font-size: 20px;
+}
+
+select,
+input,
+button {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background-color: #a8ff24;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  width: 252px;
+  padding: 15px 20px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 18px;
+}
+.btn-container {
+  text-align: left;
+  width: 100%;
+  padding-left: 53px;
+}
+
+button:hover {
+  background-color: #8edb1e;
+}
+.footer {
+    background-color: #163d3d;  /* Dark green background */
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+  
+  .copyright {
+    font-size: 14px;
+  }
+  
+  .footer-nav {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-nav span {
+    color: #ffffff;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-links a {
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #1da1f2;  /* Change color on hover */
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  }
+  
