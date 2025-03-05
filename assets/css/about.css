@@ -4,17 +4,22 @@
   justify-content: space-between;
   align-items: center;
   background-color: #2b3b3b;
-  padding: 15px 40px;
+  /* padding: 15px 40px; */
 }
 
 /* Logo Styling */
 .logo {
+  text-decoration: none;
+  display: inline-block;
   font-family: "Nova Square";
   font-weight: 400px;
   font-size: 34px;
   line-height: 41.04px;
   letter-spacing: 1%;
   color: #a8cf45;
+  width: 356px;
+  height: 41px;
+  margin-inline: 65px;
 }
 
 /* Navigation and Button Wrapper */
@@ -42,9 +47,10 @@
 .nav-links li a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 17px;
+  font-weight: 500;
   transition: color 0.3s;
+  font-family: "Montserrat";
 }
 
 .nav-links li a:hover {
@@ -54,20 +60,26 @@
 /* Sell Your Metal Button */
 .sell-metal {
   background-color: #a8cf45;
-  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
   border-radius: 3px;
   font-weight: bold;
-  width: 182px;
-  height: 50px;
-  left: 1150px;
+  width: 225px;
+  height: 69px;
+  margin-inline-end: 44px;
 }
 
 .sell-metal a {
   text-decoration: none;
   color: black;
-  font-size: 16px;
   display: flex;
   align-items: center;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20.72px;
+  /* letter-spacing: 1%; */
+  text-align: center;
+  font-family: "Montserrat";
 }
 
 .sell-metal span {
@@ -87,6 +99,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: "-webkit-fill-available";
 }
 
 .hero h2 {
@@ -151,7 +164,7 @@
 
 /* Call to Action */
 .cta {
-    background: url("../images/footerImageabout.jpeg") no-repeat center
+  background: url("../images/footerImageabout.jpeg") no-repeat center
     center/cover;
   position: relative;
   width: 100%;
@@ -186,7 +199,6 @@
   border-radius: 10px;
 }
 
-
 .cta h3 {
   font-weight: 700px;
   font-size: 27px;
@@ -200,12 +212,12 @@
 }
 
 .cta p {
-    font-family: "Jost";
-font-weight: 400px;
-font-size: 20px;
-line-height: 28.9px;
-letter-spacing: 1%;
-text-align: center;
+  font-family: "Jost";
+  font-weight: 400px;
+  font-size: 20px;
+  line-height: 28.9px;
+  letter-spacing: 1%;
+  text-align: center;
 }
 
 .cta button {

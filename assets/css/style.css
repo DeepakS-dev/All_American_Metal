@@ -1,37 +1,95 @@
-/* Header Navigation */
-header {
-  background-color: #18302b;
-  padding: 15px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
 }
-nav {
+
+/* Navbar Styling */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
+  background-color: #2b3b3b;
+  /* padding: 15px 40px; */
 }
-nav .logo {
-  font-size: 22px;
-  font-weight: bold;
-  color: #a3db33;
+
+/* Logo Styling */
+.logo {
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Ensure proper spacing */
+  font-family: "Nova Square";
+  font-weight: 400px;
+  font-size: 34px;
+  line-height: 41.04px;
+  letter-spacing: 1%;
+  color: #a8cf45;
+  margin-inline: 65px;
 }
-nav ul {
-  list-style: none;
+
+/* Navigation and Button Wrapper */
+.nav-container {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
-nav ul li a {
-  color: white;
-  text-decoration: none;
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20.72px;
 }
-.sell-btn {
-  background-color: #a3db33;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
+
+.nav-links li {
+  display: inline;
+  font-family: "Montserrat";
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-family: "Montserrat";
+}
+
+.nav-links li a:hover {
+  color: #a8cf45;
+}
+
+/* Sell Your Metal Button */
+.sell-metal {
+  background-color: #a8cf45;
+  display: flex;
+  justify-content: center;
+  border-radius: 3px;
+  font-weight: bold;
+  width: 225px;
+  height: 69px;
+  margin-inline-end: 44px;
+}
+
+.sell-metal a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20.72px;
+  letter-spacing: 1%;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.sell-metal span {
+  margin-left: 10px;
+  font-size: 18px;
 }
 
 /* Hero Section */
@@ -44,14 +102,12 @@ nav ul li a {
   justify-content: center;
   text-align: center;
   position: relative;
-  margin-top: 60px;
+  width: "-webkit-fill-available";
 }
 
 .hero h1 {
   width: 967px;
   height: 124px;
-  top: 220px;
-  left: 237px;
   font-family: Montserrat;
   font-weight: 800px;
   font-size: 51px;
@@ -270,7 +326,6 @@ nav ul li a {
   max-width: 100%;
   margin: 0 auto;
   margin-top: 5px;
-  
 }
 
 .maximize-profits h2 {
@@ -278,14 +333,13 @@ nav ul li a {
   font-weight: bold;
   margin-bottom: 15px;
 }
-.sellYourButton{
+.sellYourButton {
   width: 253px;
-height: 69px;
-top: 2045px;
-left: 580px;
-border-radius: 2px;
-background-color: #AEDA24;
-
+  height: 69px;
+  top: 2045px;
+  left: 580px;
+  border-radius: 2px;
+  background-color: #aeda24;
 }
 
 .maximize-profits p {

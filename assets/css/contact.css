@@ -1,22 +1,21 @@
-
-
 /* Navbar Styling */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #2b3b3b;
-  padding: 15px 40px;
+  /* padding: 15px 40px; */
 }
-
-/* Logo Styling */
 .logo {
+  text-decoration: none;
+  display: inline-block;
   font-family: "Nova Square";
   font-weight: 400px;
   font-size: 34px;
   line-height: 41.04px;
   letter-spacing: 1%;
   color: #a8cf45;
+  margin-inline: 65px;
 }
 
 /* Navigation and Button Wrapper */
@@ -44,9 +43,10 @@
 .nav-links li a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 17px;
+  font-weight: 500;
   transition: color 0.3s;
+  font-family: "Montserrat";
 }
 
 .nav-links li a:hover {
@@ -54,27 +54,33 @@
 }
 
 .sell-metal {
-    background-color: #a8cf45;
-    padding: 10px 20px;
-    border-radius: 3px;
-    font-weight: bold;
-    width: 182px;
-    height: 31px;
-    left: 1150px;
-  }
-  
-  .sell-metal a {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .sell-metal span {
-    margin-left: 10px;
-    font-size: 18px;
-  }
+  background-color: #a8cf45;
+  display: flex;
+  justify-content: center;
+  border-radius: 3px;
+  font-weight: bold;
+  width: 225px;
+  height: 69px;
+  margin-inline-end: 44px;
+}
+
+.sell-metal a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20.72px;
+  /* letter-spacing: 1%; */
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.sell-metal span {
+  margin-left: 10px;
+  font-size: 18px;
+}
 
 /* Hero Section */
 .hero {
@@ -87,6 +93,7 @@
   text-align: center;
   font-size: 2.5em;
   font-weight: bold;
+  width: "-webkit-fill-available";
 }
 
 /* Contact Details Section */
