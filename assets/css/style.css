@@ -96,7 +96,7 @@
 .hero {
   background: url("../images/background_image.jpeg") no-repeat center
     center/cover;
-  height: 400px;
+  height: 565px;
   display: flex;
   align-items: center;
   justify-content: center;

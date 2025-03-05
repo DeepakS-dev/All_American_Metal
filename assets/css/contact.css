@@ -86,7 +86,7 @@
 .hero {
   background: url("../images/background_image.jpeg") no-repeat center
     center/cover;
-  height: 300px;
+    height: 392px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,6 +94,15 @@
   font-size: 2.5em;
   font-weight: bold;
   width: "-webkit-fill-available";
+}
+
+.hero h2 {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 51px;
+  line-height: 62.17px;
+  letter-spacing: 1%;
+  text-align: center;
 }
 
 /* Contact Details Section */

@@ -93,9 +93,6 @@
     center/cover;
   width: 1514px;
   height: 392px;
-  /* top: 67px; */
-  /* left: -4px; */
-  /* height: 300px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,8 +100,8 @@
 }
 
 .hero h2 {
-  font-family: Montserrat;
-  font-weight: 800px;
+  font-family: "Montserrat";
+  font-weight: 800;
   font-size: 51px;
   line-height: 62.17px;
   letter-spacing: 1%;
@@ -229,6 +226,9 @@
   border-radius: 5px;
   margin-top: 15px;
   font-weight: bold;
+  width: 253px;
+  height: 69px;
+  
 }
 
 .cta button:hover {
